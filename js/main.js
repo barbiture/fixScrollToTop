@@ -16,27 +16,15 @@
          if(e.originalEvent.wheelDelta < 0) {
             $(window).scroll(function(e){
                 $(window).scrollTop() < prevEl
-                    ? [
-                        el.addClass('fixedOff'),
-                        el.removeClass('fixedOn')
-                    ]
-                    : [
-                        el.addClass('fixedOff'),
-                        el.removeClass('fixedOn')
-                    ]
+                    ? el.addClass('fixedOff').removeClass('fixedOn')
+                    : el.addClass('fixedOff').removeClass('fixedOn')
             });
             
          }else {
             $(window).scroll(function(e){
                 $(window).scrollTop() < prevEl
-                    ? [
-                        el.addClass('fixedOff'),
-                        el.removeClass('fixedOn')
-                    ]
-                    : [
-                        el.addClass('fixedOn'),
-                        el.removeClass('fixedOff')
-                    ]
+                    ? el.addClass('fixedOff').removeClass('fixedOn')
+                    : el.addClass('fixedOn').removeClass('fixedOff')
             });
          }
          //prevent page fom scrolling
