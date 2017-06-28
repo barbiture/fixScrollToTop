@@ -1,0 +1,21 @@
+.wrap {
+  min-height: 1000vh;
+}
+.previousEl {
+  background-color: #000;
+  color: #fff;
+  height: 400px;
+}
+.fixedElement {
+    background-color: #c0c0c0;
+    width:100%;
+    z-index:100;
+}
+.fixedOff {
+  position: static;
+  top:0;
+}
+.fixedOn {
+  position: fixed;
+  top:0;
+}
